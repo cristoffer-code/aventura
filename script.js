@@ -6,6 +6,9 @@ let itemsList = document.getElementById("items");
 let inventoryItems = [];
 
 function choosePath(choice) {
+    // Limpa as opções antigas
+    choices.innerHTML = '';
+
     if (choice === 1) {
         // Entrar na floresta
         storyText.innerHTML = "Você entra na Floresta Sombria, onde o ar é denso e a vegetação cresce em todo lugar. De repente, você se depara com uma armadilha!";
