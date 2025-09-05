@@ -3,37 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Arcano: O Labirinto</title>
+    <title>Aventura: O Tesouro da Floresta Sombria</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>O Labirinto do Projeto Arcano</h1>
-        <p>Decifre o código e encontre a saída.</p>
-    </header>
-
-    <main class="labirinto-container">
-        <div id="labirinto">
-            <div class="parede"></div>
-            <div class="caminho" id="inicio">Início</div>
-            <div class="parede"></div>
-            <div class="parede"></div>
-            <div class="caminho"></div>
-            <div class="parede"></div>
-            <div class="caminho" id="enigma-1"></div>
-            <div class="parede"></div>
-            <div class="caminho"></div>
-            <div class="parede"></div>
-            <div class="parede"></div>
-            <div class="caminho" id="saida">Saída</div>
-            <div class="parede"></div>
+    <div class="game-container">
+        <h1>Aventura: O Tesouro da Floresta Sombria</h1>
+        <p id="story-text">Bem-vindo à aventura! Você está prestes a entrar na Floresta Sombria em busca de um tesouro antigo. Sua jornada começa agora...</p>
+        
+        <div id="choices">
+            <button onclick="choosePath(1)">Entrar na floresta</button>
+            <button onclick="choosePath(2)">Ficar na aldeia</button>
         </div>
-    </main>
-
-    <footer>
-        <p>Uma aventura colaborativa no GitHub.</p>
-    </footer>
-
+        
+        <div id="inventory" class="hidden">
+            <h2>Seu inventário:</h2>
+            <ul id="items">
+                <!-- Itens do inventário serão listados aqui -->
+            </ul>
+        </div>
+    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
+
