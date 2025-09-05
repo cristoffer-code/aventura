@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aventura: O Tesouro da Floresta Sombria</title>
+    <title>Aventura: O Caminho da Escolha</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="game-container">
-        <h1>Aventura: O Tesouro da Floresta Sombria</h1>
-        <p id="story-text">Bem-vindo à aventura! Você está prestes a entrar na Floresta Sombria em busca de um tesouro antigo. Sua jornada começa agora...</p>
+        <h1>Aventura: O Caminho da Escolha</h1>
+        <p id="story-text">Você está diante de uma bifurcação na estrada. O que você faz?</p>
         
         <div id="choices">
-            <button id="choice1" onclick="choosePath(1)">Entrar na floresta</button>
-            <button id="choice2" onclick="choosePath(2)">Ficar na aldeia</button>
+            <button id="choice1" onclick="chooseOption(1)">Escolha 1</button>
+            <button id="choice2" onclick="chooseOption(2)">Escolha 2</button>
+            <button id="choice3" onclick="chooseOption(3)">Escolha 3</button>
         </div>
         
         <div id="inventory" class="hidden">
-            <h2>Seu inventário:</h2>
+            <h2>Inventário:</h2>
             <ul id="items">
                 <!-- Itens do inventário serão listados aqui -->
             </ul>
